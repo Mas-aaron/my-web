@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis Academy - Online Learning Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-kids.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Francis Academy</div>
+                <nav class="navbar">
+                    <div class="nav-links" id="navLinks">
+                        <a href="index.html" class="nav-item">Home</a>
+                        <a href="category.html" class="nav-item">Category</a>
+                        <a href="Kids.html" class="nav-item active">Kids</a>
+                        <a href="blog.html" class="nav-item">Blog</a>
+                        <a href="contactus.html" class="nav-item">Contact Us</a>
+                        <a href="login.html" class="nav-item">Login</a>
+                    </div>
+                    <div class="search-box">
+                        <div class="search-container">
+                            <input type="text" placeholder="Search courses..." class="search-input">
+                            <button class="search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-search" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="mobile-menu" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <section class="kids-hero">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Kids Learning</span>
+            </div>
+            <h1>Learning Adventures for Young Minds</h1>
+            <p>Interactive courses designed to spark creativity and build essential skills for children aged 5-15</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Explore Courses</button>
+                <button class="btn-outline-white">Free Trial</button>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Age Groups Section -->
+    <section class="age-groups-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">LEARNING PATH</span>
+                <h2>Courses Tailored for Every Age</h2>
+                <p>Our curriculum is designed to match each child's developmental stage and learning needs</p>
+            </div>
+            <div class="age-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="age5-8">Ages 5-8</button>
+                    <button class="tab-button" data-tab="age9-12">Ages 9-12</button>
+                    <button class="tab-button" data-tab="age13-15">Ages 13-15</button>
+                </div>
+                
+                <div class="tab-content active" id="age5-8">
+                    <div class="age-content">
+                        <div class="age-info">
+                            <h3>Early Explorers (Ages 5-8)</h3>
+                            <p>Our youngest learners embark on a journey of discovery through play-based learning...</p>
+                            <!-- Rest of your content -->
+                        </div>
+                        <div class="age-image">
+                            <img src="images/kids-age5-8.jpeg" alt="Kids Ages 5-8">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="age9-12">
+                    <div class="age-content">
+                        <!-- Content for ages 9-12 -->
+                        <div class="age-info">
+                            <h3>Young Innovators (Ages 9-12)</h3>
+                            <p>Building on foundational skills with more challenging projects that develop:</p>
+                            <ul class="age-features">
+                                <li><i class="fas fa-check-circle"></i> Intermediate programming</li>
+                                <li><i class="fas fa-check-circle"></i> Creative problem solving</li>
+                                <li><i class="fas fa-check-circle"></i> Advanced math concepts</li>
+                                <li><i class="fas fa-check-circle"></i> Scientific experimentation</li>
+                            </ul>
+                            <button class="btn-accent">View Courses</button>
+                        </div>
+                        <div class="age-image">
+                            <img src="images/kids-age9-12.jpeg" alt="Kids Ages 9-12">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="age13-15">
+                    <div class="age-content">
+                        <!-- Content for ages 13-15 -->
+                        <div class="age-info">
+                            <h3>Teen Creators (Ages 13-15)</h3>
+                            <p>Advanced courses that prepare teens for high school and beyond:</p>
+                            <ul class="age-features">
+                                <li><i class="fas fa-check-circle"></i> Advanced coding projects</li>
+                                <li><i class="fas fa-check-circle"></i> Digital media creation</li>
+                                <li><i class="fas fa-check-circle"></i> Algebra & geometry</li>
+                                <li><i class="fas fa-check-circle"></i> Robotics & engineering</li>
+                            </ul>
+                            <button class="btn-accent">View Courses</button>
+                        </div>
+                        <div class="age-image">
+                            <img src="images/kids-age13-15.jpeg" alt="Kids Ages 13-15">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Kids Courses -->
+    <section class="learning-benefits-modern">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-subtitle-modern">SMART LEARNING</span>
+                <h2>Why Parents & Kids Love Francis Academy</h2>
+                <p class="section-intro">Our research-backed approach combines education with fun to create meaningful learning experiences</p>
+            </div>
+    
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game-Based Curriculum</h3>
+                    <p>Interactive games and challenges that make learning addictive while building real skills</p>
+                    <div class="benefit-stats">
+                        <span>92% engagement rate</span>
+                    </div>
+                </div>
+    
+                <div class="benefit-card highlight-card">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Real-time dashboards show exactly what your child is learning and mastering</p>
+                    <div class="benefit-stats">
+                        <span>+47% retention</span>
+                    </div>
+                    <div class="highlight-badge">Most Valued</div>
+                </div>
+    
+                <div class="benefit-card">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Certified Coaches</h3>
+                    <p>All instructors pass rigorous training in child psychology and modern pedagogy</p>
+                    <div class="benefit-stats">
+                        <span>4.9/5 rating</span>
+                    </div>
+                </div>
+    
+                <div class="benefit-card">
+                    <div class="benefit-icon-circle">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe Environment</h3>
+                    <p>COPPA-compliant platform with no ads or external links for worry-free learning</p>
+                    <div class="benefit-stats">
+                        <span>100% secure</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="testimonial-banner">
+                <div class="testimonial-content">
+                    <div class="testimonial-quote">
+                        "My 8-year-old went from hating math to asking to do 'just one more lesson' every day!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/parent-avatar.jpg" alt="Sarah J.">
+                        <div>
+                            <strong>Sarah J.</strong>
+                            <span>Parent of 2 learners</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">250K+</div>
+                        <div class="stat-label">Happy Learners</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Completion Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-courses-modern">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-subtitle-modern">TRENDING NOW</span>
+                <h2>Featured Courses for Young Innovators</h2>
+                <div class="header-controls">
+                    <div class="category-filter">
+                        <span>Filter by:</span>
+                        <select>
+                            <option>All Categories</option>
+                            <option>Coding</option>
+                            <option>Math</option>
+                            <option>Science</option>
+                            <option>Creativity</option>
+                        </select>
+                    </div>
+                    <button class="view-all-btn">View All Courses <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+    
+            <div class="courses-carousel">
+                <!-- Course Card 1 -->
+                <div class="course-card-modern">
+                    <div class="course-badge-container">
+                        <span class="course-badge bestseller">Bestseller</span>
+                        <span class="course-badge age">Ages 6-9</span>
+                    </div>
+                    <div class="course-image-modern">
+                        <img src="images/coding-for-kids.jpeg" alt="Coding Adventures">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="course-info-modern">
+                        <div class="course-category">Technology</div>
+                        <h3>Coding Adventures with Scratch</h3>
+                        <p class="course-excerpt">Create your first games while learning fundamental programming concepts</p>
+                        
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.8 (1,240)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="far fa-clock"></i> 8 weeks
+                            </div>
+                        </div>
+                        
+                        <div class="course-footer">
+                            <div class="price">
+                                <span class="current-price">$24.99</span>
+                                <span class="original-price">$49.99</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Course Card 2 -->
+                <div class="course-card-modern featured">
+                    <div class="course-badge-container">
+                        <span class="course-badge featured">Featured</span>
+                        <span class="course-badge age">Ages 8-12</span>
+                    </div>
+                    <div class="course-image-modern">
+                        <img src="images/young-scientist.jpeg" alt="Young Scientist">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="course-info-modern">
+                        <div class="course-category">Science</div>
+                        <h3>Young Scientist Lab</h3>
+                        <p class="course-excerpt">Hands-on experiments you can do at home with everyday materials</p>
+                        
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>5.0 (890)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="far fa-clock"></i> 6 weeks
+                            </div>
+                        </div>
+                        
+                        <div class="course-footer">
+                            <div class="price">
+                                <span class="current-price">$19.99</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- More course cards... -->
+            </div>
+    
+            <div class="carousel-controls">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+   
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Francis Academy</h3>
+                    <p>Empowering students with personalized interactive learning designed to build essential skills for future success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Educators</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new courses and offers</p>
+                    <form>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Francis Academy. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script2.js"></script>
+    <script src="kids-scripts.js"></script>
+</body>
+</html>
